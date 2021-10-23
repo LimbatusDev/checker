@@ -1,5 +1,13 @@
-export const SocialResults = () => {
+export const SocialResults = ({ name, socialStatus }) => {
+  console.log(socialStatus)
   return (
-    <div></div>
+    <div className="talla">
+      {
+        Object.keys(socialStatus).forEach((i, j) => {
+          return <p>{j}</p>
+        })
+      }
+      <p>{JSON.stringify(socialStatus)}</p>
+    </div>
   )
 }
