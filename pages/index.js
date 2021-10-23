@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Checker } from '../components/Checker'
 import { Footer } from '../components/Footer'
 
 import styles from '../styles/Home.module.css'
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        checker
+        <Checker />
       </main>
 
       <Footer />
